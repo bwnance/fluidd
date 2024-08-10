@@ -194,7 +194,7 @@ export default class DiagnosticsCard extends Mixins(BrowserMixin) {
       dataZoom: [{
         type: 'slider',
         zoomOnMouseWheel: 'shift',
-        start: 100 - config.defaultZoom,
+        start: 100 - this.config.defaultZoom,
         end: 100
       }],
       series
