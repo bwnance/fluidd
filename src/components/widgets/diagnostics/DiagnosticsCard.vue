@@ -192,8 +192,10 @@ export default class DiagnosticsCard extends Mixins(BrowserMixin) {
           : undefined
       })),
       dataZoom: [{
-        type: 'inside',
-        zoomOnMouseWheel: 'shift'
+        type: 'slider',
+        zoomOnMouseWheel: 'shift',
+        start: 100 - config.defaultZoom,
+        end: 100
       }],
       series
     } as EChartsOption

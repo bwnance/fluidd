@@ -8,6 +8,8 @@ export interface DiagnosticsCardConfig extends LayoutConfig {
   icon: string
   title: string
   height: number
+  // zoom percent - so 10 would be default to the zoom being from 90% to 100%
+  defaultZoom: number
 
   axes: ChartAxis[]
 }

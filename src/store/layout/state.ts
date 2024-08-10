@@ -41,6 +41,7 @@ export const defaultState = (): LayoutState => {
           title: 'Speeds',
           collapsed: false,
           height: 300,
+          defaultZoom: 100,
           icon: 'motion',
           axes: [{
             enabled: true,

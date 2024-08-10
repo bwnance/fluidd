@@ -60,6 +60,20 @@
         ]"
       />
     </app-setting>
+    <app-setting :title="$t('app.setting.label.defaultZoom')">
+      <v-text-field
+        v-model="config.defaultZoom"
+        filled
+        dense
+        single-line
+        hide-details="auto"
+        suffix="%"
+        :rules="[
+          $rules.required,
+          $rules.numberGreaterThanOrEqual(1)
+        ]"
+      />
+    </app-setting>
   </div>
 </template>
 
