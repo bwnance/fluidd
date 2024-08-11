@@ -582,6 +582,7 @@ app:
       fps_target: FPS Target
       fps_idle_target: FPS Target when not in focus
       height: Height
+      default_zoom: Default Zoom
       hide_single_part_bounding_box: Hide part bounding box when printing a single part
       gcode_coords: Use GCode Coordinates
       icon: Icon

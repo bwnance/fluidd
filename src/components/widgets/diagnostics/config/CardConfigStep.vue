@@ -60,7 +60,7 @@
         ]"
       />
     </app-setting>
-    <app-setting :title="$t('app.setting.label.defaultZoom')">
+    <app-setting :title="$t('app.setting.label.default_zoom')">
       <v-text-field
         v-model="config.defaultZoom"
         filled
