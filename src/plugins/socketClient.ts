@@ -164,7 +164,7 @@ export class WebSocketClient {
               // so we cache these and send them through every second.
 
               // If any of these properties exist, bypass the cache and send immediately
-              for (const key of ['motion_report', 'tmc4671 stepper_x', 'tmc4671 stepper_y']) {
+              for (const key of ['motion_report', 'tmc4671 stepper_x', 'tmc4671 stepper_y', 'sensorlesstest']) {
                 if (this.store && key in params) {
                   this.store.dispatch('printer/onFastNotifyStatusUpdate', { key, payload: params[key] }, { root: true })
                   delete params[key]
